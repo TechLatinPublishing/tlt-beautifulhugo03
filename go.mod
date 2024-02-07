@@ -1,3 +1,3 @@
-module github.com/halogenica/beautifulhugo
+module github.com/TechLatinPublishing/tlt-beautifulhugo03
 
-go 1.20
+go 1.21
