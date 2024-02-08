@@ -15,9 +15,9 @@
   <div class="posts-list">
     {{ range .Pages }}
     <p>--------- in content ----------------</p>
-    <div class="row">
+    <div style="display: flex;">
       {{ partial "tech/rightImageLeft.html" .}} 
-  <!-- right side of tech section -->
+          <!-- right side of tech section -->
       {{ partial "tech/rightTextRight.html" .}}
     </div>
 

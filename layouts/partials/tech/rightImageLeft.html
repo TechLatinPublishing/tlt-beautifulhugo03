@@ -1,18 +1,18 @@
 {{ if .Params.image }} 
-  <div style="display: flex;">
+  <!-- <div style="display: flex;"> -->
     <div style="width: 15%; background-color: {{ .Site.Params.vyBKColor }}; display: flex; justify-content: center; align-items: center;">
         <!-- Your image goes here -->
         <img src= "{{ .Params.image }}" alt="Image" style="max-width: 90%; max-height: 90%;">
     </div>
-  </div>
+  <!-- </div> -->
 {{ else }} 
 
-  <div style="display: flex;">
+  <!-- <div style="display: flex;"> -->
       <div style="width: 2%; background-color: {{ .Site.Params.vyBKColor }}; display: flex; justify-content: center; align-items: center;">
           <!-- Your image goes here -->
           <!-- {{/* <img src= "/img03/goph02.png" alt="Image" style="max-width: 90%; max-height: 90%;"> */}} -->
 
       </div>
-  </div>
+  <!-- </div> -->
 {{ end }} 
  
