@@ -1,14 +1,22 @@
 <!-- ===== right column. ======================================= -->
 
-            <!-- <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"> -->
-           <div class="col-lg-9 col-lg-offset-0 col-md-9 col-md-offset-0">
+<!-- <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"> -->
+<div class="col-lg-9 col-lg-offset-0 col-md-9 col-md-offset-0">
+  <div class="well">
+    <h6>put horz add here</h6>
+  </div>
 
-                <div class="well">
-                      <h6>put horz add here</h6> 
-                </div>  
-
-              <!-- {{ with .Content }}
+  <!-- {{ with .Content }}
               {{ end }} -->
-<p>---------   in content ----------------</p>
-            <!-- {{.}} -->
-          </div>
+
+  <!-- {{.}} -->
+
+  <!-- Ranges through content/tech/*.md -->
+  <div class="posts-list">
+    {{ range .Pages }}
+
+    <p>--------- in content ----------------</p>
+
+    {{ end }}
+  </div>
+</div>
