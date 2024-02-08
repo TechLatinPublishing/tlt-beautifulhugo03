@@ -14,7 +14,7 @@
                 <h6>ad here</h6>
               </div>
             </div>
-
+<!-- ===== right column. ======================================= -->
 
 
       <!-- <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"> -->
@@ -27,11 +27,46 @@
                 </div>  
               {{ end }}
 
-
-        {{ with .Content }}
-          <div class="well">
+          <!-- <div class="well"> -->
+          <div>
 <p>---------   in content ----------------</p>
-            {{.}}
+            <!-- {{.}} -->
+
+
+    <!-- <div style="width: 15%; background-color: {{ .Site.Params.vyBKColor }}; display: flex; justify-content: center; align-items: center;"> -->
+        {{<!-- Your image goes here --> }}
+
+
+{{ if .Params.image }} 
+
+  <div style="display: flex;">
+    <div style="width: 15%; background-color: {{ .Site.Params.vyBKColor }}; display: flex; justify-content: center; align-items: center;">
+        <!-- Your image goes here -->
+        <img src= "{{ .Params.image }}" alt="Image" style="max-width: 90%; max-height: 90%;">
+    </div>
+  </div>
+{{ else }} 
+
+  <div style="display: flex;">
+      <div style="width: 2%; background-color: {{ .Site.Params.vyBKColor }}; display: flex; justify-content: center; align-items: center;">
+          <!-- Your image goes here -->
+          <!-- {{/* <img src= "/img03/goph02.png" alt="Image" style="max-width: 90%; max-height: 90%;"> */}} -->
+
+      </div>
+  </div>
+{{ end }} 
+
+
+
+
+
+
+
+
+
+
+
+
           </div>
         {{ end }}
 
