@@ -14,8 +14,8 @@
   <!-- Ranges through content/tech/*.md -->
   <div class="posts-list">
     {{ range .Pages }}
-
     <p>--------- in content ----------------</p>
+      {{ partial "tech/rightBigSection.html" .}}
 
     {{ end }}
   </div>
