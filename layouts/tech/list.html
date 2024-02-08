@@ -3,7 +3,9 @@
     <div class="row">
 
 
-            <div class="outer. col-lg-3 col-lg-offset-0 col-md-3 col-md-offset-0">
+          {{ partial "tech/leftAddSection" . }}
+
+            <!-- <div class="outer. col-lg-3 col-lg-offset-0 col-md-3 col-md-offset-0">
               <div class="inner">
                 <h4>tech side bar</h4>
               </div>
@@ -13,7 +15,7 @@
               <div class="inner">
                 <h6>ad here</h6>
               </div>
-            </div>
+            </div> -->
 <!-- ===== right column. ======================================= -->
 
 
@@ -21,10 +23,16 @@
 
            <div class="col-lg-9 col-lg-offset-0 col-md-9 col-md-offset-0">
 
-              {{ with .Content }}
                 <div class="well">
                       <h6>put horz add here</h6> 
                 </div>  
+
+              {{ with .Content }}
+
+
+
+
+
               {{ end }}
 
           <!-- <div class="well"> -->
@@ -35,7 +43,6 @@
 
 
 {{ if .Params.image }} 
-
   <div style="display: flex;">
     <div style="width: 15%; background-color: {{ .Site.Params.vyBKColor }}; display: flex; justify-content: center; align-items: center;">
         <!-- Your image goes here -->
