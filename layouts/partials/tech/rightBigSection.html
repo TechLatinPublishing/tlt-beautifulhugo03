@@ -6,15 +6,9 @@
     <h6>put horz add here</h6>
   </div>
 
-  <!-- {{ with .Content }}
-              {{ end }} -->
-
-  <!-- {{.}} -->
-
   <!-- Ranges through content/tech/*.md -->
   <div class="posts-list">
     {{ range .Pages }}
-    <p>--------- in content ----------------</p>
     <div style="display: flex;">
       {{ partial "tech/rightImageLeft.html" .}} 
           <!-- right side of tech section -->
