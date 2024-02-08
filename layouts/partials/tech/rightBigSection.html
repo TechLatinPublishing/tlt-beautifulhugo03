@@ -15,8 +15,11 @@
   <div class="posts-list">
     {{ range .Pages }}
     <p>--------- in content ----------------</p>
-      {{ partial "tech/rightImageLeft.html" .}}
+    <div>
+      {{ partial "tech/rightImageLeft.html" .}} 
+  <!-- right side of tech section -->
       {{ partial "tech/rightTextRight.html" .}}
+    </div>
 
     {{ end }}
   </div>
