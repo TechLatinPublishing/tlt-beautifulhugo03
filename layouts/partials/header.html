@@ -73,7 +73,8 @@
                 {{ if eq .Type "page" }}
                   <span class="{{ .Type }}-subheading">{{ $subtitle }}</span>
                 {{ else }}
-                  <h2 class="{{ .Type }}-subheading">{{ $subtitle }}</h2>
+                  <!-- <h2 class="{{ .Type }}-subheading">{{ $subtitle }}</h2> -->
+                  <h4 class="{{ .Type }}-subheading">{{ $subtitle }}</h4>
                 {{ end }}
               {{ end }}
               {{ if eq .Type "post" }}
