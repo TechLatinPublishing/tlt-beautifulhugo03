@@ -36,7 +36,9 @@
   {{ else }}
     {{- with ($.Scratch.Get "Title") }}
       <title>{{ . }} - {{ $.Site.Params.homeTitle }}</title>
-    {{- end }}
+      <p>---  head ---</p>
+
+{{- end }}
 {{ end }}
 
 {{- with ($.Scratch.Get "Description") }}
