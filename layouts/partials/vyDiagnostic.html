@@ -1,0 +1,20 @@
+{{ if eq .Site.Params.vyDiagnostic "true" }} {{/* {{ if eq
+.Site.Params.Environment "default" }} */}}
+
+<div class="well">
+  <h1>vyDiagnostics here - xxxzzzxx</h1>
+  <title>{{ .Params.title }} | {{ .Site.Title }}</title>
+  {{/* {{ printf "%#v" $.title}} */}} {{/* {{ printf "xxTitle: %#v" .Site.Title
+  }} */}}
+  <p>title: {{ .Site.Title }}</p>
+  <p>vyDiagnostic: {{ .Site.Params.vyDiagnostic }}</p>
+  {{/*
+  <p>environment: {{ .Params.Environment }}</p>
+  */}} {{/*
+  <p>Environment 2: {{.Param "Environment"}}</p>
+  */}}
+  <p>Environment: {{.Param "environment"}}</p>
+  <p>Type: {{ .Type}}</p>
+</div>
+
+{{ end }}
