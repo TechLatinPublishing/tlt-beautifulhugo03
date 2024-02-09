@@ -2,9 +2,9 @@
     <a href="{{ .Permalink }}">
         <h2 class="post-title">{{ .Title }}</h2>
         {{ if .Params.subtitle }}
-        <h4 class="post-subtitle">
-            {{ .Params.subtitle }}
-        </h4>
+            <h4 class="post-subtitle">
+                {{ .Params.subtitle }}
+            </h4>
         {{ end }}
         <!-- {{ if .Params.image }}
         <img src="{{ .Params.image }}" alt="{{ .Title }}" class="img-title" />
@@ -29,11 +29,11 @@
     </div> -->
 
     {{ if .Params.tags }}
-    <div class="blog-tags">
-        {{ range .Params.tags }}
-        <a href="{{ $.Site.LanguagePrefix | absURL }}/tags/{{ . | urlize }}/">{{ . }}</a>&nbsp;
-        {{ end }}
-    </div>
+        <div class="blog-tags">
+            {{ range .Params.tags }}
+                <a href="{{ $.Site.LanguagePrefix | absURL }}/tags/{{ . | urlize }}/">{{ . }}</a>&nbsp;
+            {{ end }}
+        </div>
     {{ end }}
 
 </article>
